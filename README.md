@@ -46,13 +46,15 @@ streamlit run app.py
 - View Graph for yield trends
 - Click Update Data to fetch latest information
 
-## Data Sources
+Data Sources
 Country	Nominal Yield	Real Yield
 United States	FRED (DGS10)	FRED TIPS (DFII10)
-Thailand	Investing.com (sample)	CPI-adjusted estimate
+Thailand	Investing.com (sample)
+CPI-adjusted estimate
+
 
 ## Project Structure
-text
+```text
 BondYieldDashboard/
 ├── app.py                 # Main entry point
 ├── agents/               # Country-specific agents
@@ -61,7 +63,7 @@ BondYieldDashboard/
 ├── ui/                   # Streamlit UI components
 ├── config/               # Settings
 └── tests/                # Unit tests
-
+```
 ## Docker Deployment
 bash
 # Build image
