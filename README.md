@@ -49,7 +49,7 @@ streamlit run app.py
 - Click Update Data to fetch latest information
 
 ## Data Sources
-Country	Nominal Yield	Real Yield
+Country `|---|`	Nominal Yield	`|---|` Real Yield
 United States	FRED (DGS10)	FRED TIPS (DFII10)
 Thailand	Investing.com (sample)
 CPI-adjusted estimate
