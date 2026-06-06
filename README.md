@@ -38,22 +38,20 @@ cp .env.example .env
 
 # 5. Run dashboard
 streamlit run app.py
-Usage
-Open browser to http://localhost:8501
+```
+## Usage
+- Open browser to http://localhost:8501
+- Select country from sidebar (Thailand / United States)
+- View Data Table for historical values
+- View Graph for yield trends
+- Click Update Data to fetch latest information
 
-Select country from sidebar (Thailand / United States)
-
-View Data Table for historical values
-
-View Graph for yield trends
-
-Click Update Data to fetch latest information
-
-Data Sources
+## Data Sources
 Country	Nominal Yield	Real Yield
 United States	FRED (DGS10)	FRED TIPS (DFII10)
 Thailand	Investing.com (sample)	CPI-adjusted estimate
-Project Structure
+
+## Project Structure
 text
 BondYieldDashboard/
 ├── app.py                 # Main entry point
@@ -63,7 +61,8 @@ BondYieldDashboard/
 ├── ui/                   # Streamlit UI components
 ├── config/               # Settings
 └── tests/                # Unit tests
-Docker Deployment
+
+## Docker Deployment
 bash
 # Build image
 docker build -t bond-dashboard .
