@@ -1,9 +1,3 @@
-
----
-
-## 📄 ไฟล์ที่ 17: `data_fetchers/update_manager.py`
-
-```python
 import pandas as pd
 from datetime import datetime, timedelta
 from typing import Optional, Tuple
