@@ -52,8 +52,8 @@ streamlit run app.py
 
 | Country | Nominal Yield | Real Yield |
 |---------|---------------|------------|
-| United States | FRED (DGS10) | FRED TIPS (DFII10) |
-| Thailand | Investing.com (sample) | CPI-adjusted estimate |
+| United States | [FRED (DGS10)](https://fred.stlouisfed.org/series/DGS10) | [FRED TIPS (DFII10)](https://fred.stlouisfed.org/series/DFII10) |
+| Thailand | [Investing.com](https://www.investing.com/rates-bonds/thailand-10-year-bond-yield-historical-data) (sample) | CPI-adjusted estimate |
 
 ## Project Structure
 
