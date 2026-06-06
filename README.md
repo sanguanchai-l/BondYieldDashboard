@@ -65,7 +65,7 @@ BondYieldDashboard/
 └── tests/                # Unit tests
 ```
 ## Docker Deployment
-bash
+```bash
 # Build image
 docker build -t bond-dashboard .
 
@@ -74,24 +74,23 @@ docker run -p 8501:8501 --env-file .env bond-dashboard
 
 # Or use docker-compose
 docker-compose up -d
-Testing
-bash
+```
+## Testing
+```bash
 # Run unit tests
 python -m pytest tests/
 
 # Run specific test file
 python tests/test_database.py
 python tests/test_fetchers.py
-Notes
-Thailand real yield is estimated using CPI (no direct TIPS equivalent)
+```
+## Notes
+- Thailand real yield is estimated using CPI (no direct TIPS equivalent)
+- First run may take 30-60 seconds to fetch 10 years of data
+- FRED API key is required for US data
+- Data is stored locally in data/bond_yields.db
 
-First run may take 30-60 seconds to fetch 10 years of data
-
-FRED API key is required for US data
-
-Data is stored locally in data/bond_yields.db
-
-Troubleshooting
+## Troubleshooting
 Issue	Solution
 ModuleNotFoundError	Run pip install -r requirements.txt again
 FRED API key invalid	Check .env file and re-register for free key
