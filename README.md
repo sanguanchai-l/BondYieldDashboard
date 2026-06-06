@@ -103,7 +103,7 @@ python tests/test_fetchers.py
 
 | Issue | Solution |
 |-------|----------|
-| ModuleNotFoundError	| Run ``` pip install -r requirements.txt ``` again |
+| ``` ModuleNotFoundError	``` | Run ``` pip install -r requirements.txt ``` again |
 | FRED API key invalid | Check ``` .env ``` file and re-register for free key |
 | No Thailand data | System uses fallback sample data |
 | Chart not showing | Go to Data Table tab first to verify data exists |
