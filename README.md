@@ -50,9 +50,10 @@ streamlit run app.py
 
 ## Data Sources
 
-`|Country|`	`|Nominal Yield|` `|Real Yield|` 
-`|United States|`	`|FRED (DGS10)|`	`|FRED TIPS (DFII10)|` 
-`|Thailand|`	`|Investing.com (sample)|` `|CPI-adjusted estimate|` 
+| Country | Nominal Yield | Real Yield |
+|---------|---------------|------------|
+| United States | FRED (DGS10) | FRED TIPS (DFII10) |
+| Thailand | Investing.com (sample) | CPI-adjusted estimate |
 
 ## Project Structure
 
