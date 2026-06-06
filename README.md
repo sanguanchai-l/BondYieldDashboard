@@ -39,21 +39,23 @@ cp .env.example .env
 # 5. Run dashboard
 streamlit run app.py
 ```
+
 ## Usage
+
 - Open browser to http://localhost:8501
 - Select country from sidebar (Thailand / United States)
 - View Data Table for historical values
 - View Graph for yield trends
 - Click Update Data to fetch latest information
 
-Data Sources
+## Data Sources
 Country	Nominal Yield	Real Yield
 United States	FRED (DGS10)	FRED TIPS (DFII10)
 Thailand	Investing.com (sample)
 CPI-adjusted estimate
 
-
 ## Project Structure
+
 ```text
 BondYieldDashboard/
 ├── app.py                 # Main entry point
@@ -64,7 +66,9 @@ BondYieldDashboard/
 ├── config/               # Settings
 └── tests/                # Unit tests
 ```
+
 ## Docker Deployment
+
 ```bash
 # Build image
 docker build -t bond-dashboard .
@@ -75,7 +79,9 @@ docker run -p 8501:8501 --env-file .env bond-dashboard
 # Or use docker-compose
 docker-compose up -d
 ```
+
 ## Testing
+
 ```bash
 # Run unit tests
 python -m pytest tests/
@@ -84,17 +90,22 @@ python -m pytest tests/
 python tests/test_database.py
 python tests/test_fetchers.py
 ```
+
 ## Notes
+
 - Thailand real yield is estimated using CPI (no direct TIPS equivalent)
 - First run may take 30-60 seconds to fetch 10 years of data
 - FRED API key is required for US data
 - Data is stored locally in data/bond_yields.db
 
 ## Troubleshooting
+
 Issue	Solution
 ModuleNotFoundError	Run pip install -r requirements.txt again
 FRED API key invalid	Check .env file and re-register for free key
 No Thailand data	System uses fallback sample data
 Chart not showing	Go to Data Table tab first to verify data exists
-License
+
+## License
+
 MIT
